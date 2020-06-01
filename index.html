@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      form
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <header>    
+      <div class="container">
+        <div id="mark">
+          <h1 class="htitle">sports on live</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="t.html">Home</a></li>
+            <li><a href="index.html" class="now">Register</a></li>
+            <li><a href="t2.html">Footbal</a></li>
+            <li><a href="t3.html">Best players</a></li>
+            <li><a href="t4.html">About</a></li>
+          </ul>
+        </nav>    
+      </div>
+    </header>
+    <div class="fc">        
+      <form name="myform" method="post" action="Hallo.html"> 
+        <h2 class="h">Form</h2>
+        <div class="form-control">
+          <label>First name:</label>
+          <input type="text" id="name" placeholder="First name" maxlength="20" pattern="[A-Za-z]{3,}" required>
+        </div>
+        <div class="form-control">
+          <label>Last name:</label>
+          <input type="text" id="name" placeholder="Last name" maxlength="20" pattern="[A-Za-z]{3,}" required>  
+        </div>
+        <div class="form-control">
+          <label>E-mail:</label>
+          <input type="email"  id="email" placeholder="E-mail" maxlength="70" minlength="15" required>
+        </div>
+        <div class="form-control">
+          <label>Password:</label>
+          <input type="password" id="psw" placeholder="Password" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#-*_]).{8}" title="Must contain at least one number, special character, uppercase and lowercase letter, and at 8 no more no less characters" required> 
+          <input type="checkbox" style="margin-left: 215px;" onclick="myFunction()">
+        </div>
+        <div class="form-control">
+          <label> Confrim Password:</label>
+          <input type="password" id="psw2" placeholder="Confrim Password" maxlength="8" minlength="8"required>
+        </div>
+        <div class="form-control">
+          <label>Phone number:</label>
+          <input type="tel" id="num" placeholder="Phone number" maxlength="11" minlength="11" pattern="(?=.*\d).{11}" required>
+        </div> 
+        <div class="form-control">
+          <label>Adress:</label>
+          <input type="text" placeholder="Adress" maxlength="100" minlength="3" required>
+        </div>
+        <div class="form-control">
+          <label>Gender:</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+          </select> 
+        </div> 
+        <div class="form-enter">
+          <input id="submit" type="submit">
+          <input type="reset"> 
+        </div>              
+      </form>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("psw");
+        if (x.type === "password") {
+        x.type = "text";
+        } else {
+        x.type = "password";
+        }
+        }
+        document.getElementById("submit").onclick = function(){
+        var password = document.getElementById("psw").value;
+        var confrimpassword = document.getElementById("psw2").value;
+        if(password != confrimpassword){
+        alert("password didn't matc try again");
+        return false;
+        }
+        else if(password == confrimpassword){
+        alert("password match")
+        }
+        return true;
+        }    
+    </script>   
+  </body>

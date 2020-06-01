@@ -1,0 +1,112 @@
+body{
+    font-size: 20px;
+    margin: 0px;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.container{
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    padding: 10px;
+    min-height: 70px;
+    border-bottom: 1px solid darkgoldenrod;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+.now{
+    color:darkgoldenrod;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;    
+}
+header #mark{
+    float: left;
+}
+header #mark h1{
+    margin: 0px;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+.htitle{
+    color: darkgoldenrod;
+}
+.fc{
+    border-radius: 5px;
+	overflow: hidden;
+	width: 500px;
+    max-width: 100%; 
+    margin-left: 430px;
+    margin-top: 30px;
+}
+.h{
+    border-bottom: 1px solid;
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    background-color: white;
+    padding: 10px 20px;
+}
+.form-control {
+	padding: 10px 20px;
+}
+.form-control label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.form-control input {
+	border: 2px solid darkgray;
+	border-radius: 4px;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	width:400px
+}
+select{
+    border: 2px solid darkgray;
+	border-radius: 4px;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	width:400px;
+}
+.form-enter{
+    padding: 10px 20px;
+}
+.form-enter input{
+    border: 2px solid darkgray;
+	border-radius: 4px;
+	display: inline;
+	font-size: 14px;
+	padding: 10px;
+    width: 197px;
+    color: darkgoldenrod;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
